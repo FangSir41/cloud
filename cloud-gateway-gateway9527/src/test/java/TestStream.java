@@ -122,7 +122,7 @@ class Person{
     }
     @Test
     public void timeTest(){
-        ZonedDateTime dateTime=ZonedDateTime.now();
-        System.out.println(dateTime);
+        ZonedDateTime dateTime1=ZonedDateTime.now();
+        System.out.println(dateTime1);
     }
 }
