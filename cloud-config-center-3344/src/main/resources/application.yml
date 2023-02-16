@@ -7,10 +7,17 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:FangSir41/sprincloud-config.git #填写你自己的github路径
+          uri: git@github.com:fangjw/springcloud-config.git
+#          uri: git@gitee.com:fangjw/springcloud-config.git
           search-paths:
             - springcloud-config
-          default-label: main
+          strict-host-key-checking: false
+#          private-key: |
+#            -----BEGIN EC PRIVATE KEY-----
+#            MHcCAQEEIKMbGa5t68X9o2z6KjD3s4cOlRbtkTebstJYxCAyMp2joAoGCCqGSM49
+#            AwEHoUQDQgAEXIt6ZlZUfVdgjS9yzv7XXsDoAMAGj2G/Ci31u3o4elWYz9RWldUN
+#            eQtQjVgllaH9Az2a98Vty6QZckp1f0WIXQ==
+#            -----END EC PRIVATE KEY-----
       label: master
 eureka:
   client:
