@@ -1,0 +1,19 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:FangSir41/sprincloud-config.git #填写你自己的github路径
+          search-paths:
+            - springcloud-config
+          default-label: main
+      label: master
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://eurekaServer1:7001/eureka
+
